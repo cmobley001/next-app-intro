@@ -35,7 +35,7 @@ const Page = () => {
               <Button title="Click Me" href="#" />
               <Button title="And Click Me" href="#" />
             </Flex>
-            <div className="flex gap-x-12 my-12 flex-wrap gap-y-6" id="card-container">
+            <div className="flex flex-col lg:flex-row gap-12 my-12 lg:flex-wrap" id="card-container">
               {cards.map((card, index) => (
                 <Card key={index} title={card.title} image={card.img} />
               ))}
