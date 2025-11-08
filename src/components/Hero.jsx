@@ -8,8 +8,8 @@ export default function Hero() {
         <LabWeek week="11" title="Deploying Site to Vercel">
           <p className="mt-2">
             Github repo:{' '}
-            <a href="https://github.com/cmobley001/react-introduction" target="_blank">
-              https://github.com/cmobley001/react-introduction
+            <a href="https://github.com/cmobley001/next-app-intro" target="_blank">
+              https://github.com/cmobley001/next-app-intro
             </a>
           </p>
         </LabWeek>
