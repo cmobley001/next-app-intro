@@ -25,12 +25,10 @@ export default function Navbar() {
       </div>
       <div className="flex gap-x-4 items-center">
         {navBts.map(({ href, title, isNew }) => (
-          <>
-            <Button href={href} classNameProp="flex text-xl">
-              {title}
-              {isNew && <Tag classNames="ml-2" />}
-            </Button>
-          </>
+          <Button key={href} href={href} classNameProp="flex text-xl">
+            {title}
+            {isNew && <Tag classNames="ml-2" />}
+          </Button>
         ))}
       </div>
     </nav>
