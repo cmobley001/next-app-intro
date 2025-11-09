@@ -1,12 +1,33 @@
 import Button from './Button'
+import Tag from './Tag'
+// import ThemeToggle from '../components/ThemeToggle'
+
+const navBts = [
+  {
+    title: 'About',
+    href: '/about',
+    isNew: true,
+  },
+  {
+    title: 'Home',
+    href: '/',
+    isNew: false,
+  },
+]
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between bg-indigo-50 p-6 items-center sticky top-0 shadow-lg w-full z-10">
+    <nav className="flex justify-between bg-indigo-50 dark:bg-gray-800 p-6 items-center sticky top-0 shadow-lg w-full z-10">
       <div className="logo bg-indigo-600 rounded-full p-6 hover:scale-105 transition-all cursor-pointer"></div>
       <div className="flex gap-x-4 items-center">
-        <Button title="Home" href="/" />
-        <Button title="About" href="/about" />
+        {navBts.map(({ href, title, isNew }) => (
+          <>
+            <Button href={href} classNameProp="flex text-xl">
+              {title}
+              {isNew && <Tag classNames="ml-2" />}
+            </Button>
+          </>
+        ))}
       </div>
     </nav>
   )
