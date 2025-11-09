@@ -5,6 +5,11 @@ import '../index.css'
 export const metadata = {
   title: 'React & Next.js Introduction',
   description: 'Next.js App project',
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({ children }) {
