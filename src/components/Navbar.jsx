@@ -4,6 +4,11 @@ import Tag from './Tag'
 
 const navBts = [
   {
+    title: 'Blog',
+    href: '/blog',
+    isNew: true,
+  },
+  {
     title: 'About',
     href: '/about',
     isNew: true,

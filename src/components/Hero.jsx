@@ -5,7 +5,7 @@ export default function Hero() {
     <>
       <div className="mb-6 min-h-[300px]">
         <h1 className="text-2xl font-bold text-center mt-6 gap-y-2 p-6">My First React Page</h1>
-        <LabWeek week="12" title="Adding a Photo Gallery">
+        <LabWeek week="13" title="Setting Up a Blog">
           <p className="mt-2">
             Github repo:{' '}
             <a href="https://github.com/cmobley001/next-app-intro" target="_blank">

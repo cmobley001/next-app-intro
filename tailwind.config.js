@@ -1,3 +1,5 @@
+import typography from '@tailwindcss/typography'
+
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: [
@@ -6,9 +8,18 @@ const config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: 'none', // Remove max-width constraint
+            color: 'inherit', // Use inherited text color
+          },
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [typography],
 };
 
 export default config;
